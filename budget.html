@@ -19,11 +19,17 @@
 
         .header2 {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             text-align: center;
             width: 100%;
             font-size: 32px;
+            padding: 20px 0;
+        }
+        .header2 img {
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -32,9 +38,12 @@
     <!-- Title -->
     <div class="header2">
         <h2>View Potential Budget</h2>
-        <img src="images/budget1.png" >
-        <img src="images/budget2.png" >
-        <img src="images/habittracker.png">
+        <br><br>
+        <img src="budget1.png" width="750" alt="Budget Chart">
+        <br><br>
+        <img src="budget2.png" width="750" alt="Spending Analysis">
+        <br><br>
+        <img src="habittracker.png" width="750" alt="Habit Tracker">
     </div>
     <script type="module" src="/main.js"></script>
 </body>

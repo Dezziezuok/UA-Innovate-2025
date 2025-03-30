@@ -3,10 +3,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 
     <!-- CSS styling -->
     <style>
@@ -17,11 +19,34 @@
 
         .header2 {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             text-align: center;
             width: 100%;
-            font-size: 32x;
+            font-size: 36px;
+            padding: 20px 0;
+        }
+        .education {
+            font-size: 16px;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .link {
+            text-decoration: underline;
+            color: rgba(77, 16, 16, 0.591);
+            font-size: 16px;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -30,6 +55,28 @@
     <!-- Title -->
     <div class="header2">
         <h2>View Educational Links</h2>
+        <br><br>
+        <p class = "education">
+            Based on your savings this month, you could do great things by starting new investments. 
+            <br><br>
+            Learn more about it at this link:
+            <br><br>
+            <p class = "link">https://www.pnc.com/insights/personal-finance/invest.html?lnksrc=topnav</p>
+            <br><br>
+            <p class = "education">Or, visit these links to master your financial literacy skills:</p>
+            <br><br>
+            <p class = "education">SAVE:</p>
+            <br>
+            <p class = "link"> https://www.pnc.com/insights/personal-finance/save.html?lnksrc=topnav</p>
+             <br><br>
+             <p class = "education">SPEND:</p>
+            <br>
+            <p class = "link"> https://www.pnc.com/insights/personal-finance/spend.html?lnksrc=topnav</p>
+             <br><br>
+             <p class = "education">MANAGE WEALTH: </p>
+            <br>
+            <p class = "link">https://www.pnc.com/insights/wealth-management.html?lnksrc=topnav</p>
+            </p>
     </div>
     <script type="module" src="/main.js"></script>
 </body>

@@ -3,9 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="./style.css" />
 		<title>UA Innovate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width , initial-scale=1.0" />
     <style>
     </style>
@@ -42,21 +43,46 @@
         }
         .header {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             text-align: center;
             width: 100%;
             font-size: 40px;
+            padding: 20px 0;
 
         }
         .header img {
             margin-left: 8px;
         }
+        .description {
+            font-size: 20px;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            padding: 30px 0;
+        }
+        
     </style>
 
     <div class="header">
         <h1>Cash Compass</h1>
         <img src="LOGOS-removebg-preview.png" width="200" height="185" alt="Logo">
+        <p class = "description">
+            Are you tired of never knowing how much money you’ll spend each month?
+            <br><br>
+            Does it feel like your finances are a constant guessing game? 
+            <br><br>
+            Here to help our youth better manage their money.
+            <br><br>
+            Cash Compass is an AI-powered budgeting companion tailored just for you! Our platform gives you the power to plan ahead with incredible accuracy and make smarter financial decisions. Imagine having a personal financial assistant that uses your past spending habits to create a clear roadmap to achieve your future financial goals..
+            <br><br>
+            Whether you’re saving for your next big purchase, cutting down on spending, or simply trying to become more educated on managing your money, Cash Compass is here to help you take control of your financial journey.. Predict your financial future today!
+            <br><br>
+            </p>
     </div>
 		
 <body>
@@ -67,26 +93,26 @@
 		 <div class="menu-container">
 			<button class="menu-button">☰</button>
 			<div class="dropdown-menu">
-                <button type="button" onclick="viewPastSpending()">View Past Spending</button>
-                <button type="button" onclick="viewBudget()">View Potential Budget</button>
-                <button type="button" onclick="viewGoals()">Goals and Reward System</button>
-                <button type="button" onclick="viewEducation()">Education</button>
+                <!-- Menu Buttons -->
+                 <!-- Past Spending -->
+                <a href="past-spending.html">
+                    <button type="button" onclick="viewPastSpending()">View Past Spending</button>
+                </a>
+                <!-- Budget -->
+                <a href="budget.html">
+                    <button type="button" onclick="viewBudget()">View Potential Budget</button>
+                </a>
+                <!-- Goals -->
+                <a href="goals.html">
+                    <button type="button" onclick="viewGoals()">Goals and Reward System</button>
+                </a>
+                <!-- Education -->
+                <a href="education.html">
+                    <button type="button" onclick="viewEducation()">Education</button>
+                </a>
 			</div>
 		</div>
-<script>
-        function viewPastSpending() {
-            window.location.href = "past-spending.html";
-        }
-        function viewBudget() {
-            window.location.href = "budget.html";
-        }
-        function viewGoals() {
-            window.location.href = "goals.html";
-        }
-        function viewEducation() {
-            window.location.href = "education.html";
-        }
-</script>
+
 </body>
 </html>
 

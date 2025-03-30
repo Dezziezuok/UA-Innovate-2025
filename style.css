@@ -9,6 +9,11 @@ h2 {
     font-family: Georgia;
     text-align: center;
 }
+p {
+    color: rgba(77, 16, 16, 0.591);
+    font-family: Georgia;
+    text-align: center;
+}
 /* user interface */
 button {
     background-color:#D8BFD8;
@@ -27,4 +32,10 @@ button:hover{
     transform: scale(1.075);
     background-color: #99b170;
 
+}
+/* web page link */
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: Georgia;
 }

@@ -9,15 +9,14 @@
 		<meta name="viewport" content="width=device-width , initial-scale=1.0" />
     <style>
     </style>
-</head>
 <body>
     <!-- Heading -->
         <script type="module" src="/main.js"></script>
-        <h1>Cash Compass</h1>
     <style>
         /* Menu drop-down */
         body {
             margin: 0;
+            background-color: #f0edca;
         }
         .menu-container {
             position: fixed;
@@ -27,10 +26,10 @@
             display: inline-block;
         }
         .menu-button{
-            font-size: 18px;
+            font-size: 24px;
         }
         .dropdown-menu {
-            display: none;
+            display: block !important;
         }
         .menu-container:hover .dropdown-menu{
                 display: block;
@@ -39,10 +38,26 @@
         display: block;
         }
         .dropdown-menu button:hover {
-        background-color: #B0C4DE
+        background-color: #99b170;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+
+        }
+        .header img {
+            margin-left: 8px;
         }
     </style>
-</head>
+
+    <div class="header">
+        <h1>Cash Compass</h1>
+        <img src="LOGOS-removebg-preview.png" width="200" height="185" alt="Logo">
+    </div>
 		
 <body>
     
@@ -52,26 +67,26 @@
 		 <div class="menu-container">
 			<button class="menu-button">☰</button>
 			<div class="dropdown-menu">
-                <button onclick="viewPastSpending()">View Past Spending</button>
-                <button onclick="viewBudget()">View Potential Budget</button>
-                <button onclick="viewGoals()">Goals and Reward System</button>
-                <button onclick="viewEducation()">Education</button>
+                <button type="button" onclick="viewPastSpending()">View Past Spending</button>
+                <button type="button" onclick="viewBudget()">View Potential Budget</button>
+                <button type="button" onclick="viewGoals()">Goals and Reward System</button>
+                <button type="button" onclick="viewEducation()">Education</button>
 			</div>
 		</div>
-    <script>
+<script>
         function viewPastSpending() {
-            alert("Viewing past spending...");
+            window.location.href = "past-spending.html";
         }
         function viewBudget() {
-            alert("Viewing potential budget...");
+            window.location.href = "budget.html";
         }
         function viewGoals() {
-            alert("Goals and reward system...");
+            window.location.href = "goals.html";
         }
         function viewEducation() {
-            alert("Education section...");
+            window.location.href = "education.html";
         }
-    </script>
+</script>
 </body>
 </html>
 
